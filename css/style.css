@@ -238,3 +238,151 @@
     height: 100px;
     
 }
+
+/* catalog btn */
+.hamburger{
+    position: relative;
+    right: 50%;
+    top:-5px;
+    z-index:2;
+    width: 18px;
+    height: 8px;
+    cursor: pointer;
+    float: right;
+    transition: all 0.3s ease-out;
+    transform: translateX(50%);
+}
+.hamburger__span.hamburger__span {
+    height: 2px;
+    background:#202020 ;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    margin: 2px auto;
+    
+
+}
+
+#one.on{
+    transform: rotate(45deg) translateX(4px) translateY(-2px);
+}
+#two.on{
+    opacity: 0;
+}
+#three.on{
+    transform: rotate(-45deg) translateX(7px) translateY(-2px);
+}
+
+/* catalog bar */
+/* .menu{
+   
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    opacity: 0;
+    z-index: 0;
+    
+} */
+
+.close-menu{
+    position: fixed;
+    margin: 1em;
+    font-size: 16px;
+    color: #57544c;
+    z-index: 1;
+}
+
+.nav{
+   
+    position: absolute;
+    left: 0;
+    margin-top: 5%;
+    width: 100%;
+    opacity: 0;
+    background:  rgb(255, 255, 255);;
+    z-index: 0;
+    
+}
+.main-menu{
+    padding-bottom: 100px;
+}
+.main-menu.main-menu-item{
+    margin-top: auto;
+}
+
+
+.visible{
+    z-index: 1;
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+
+.sidebar__title{
+   
+    margin: 40px  0 50px 7%;
+    font-size: 20px;
+    font-weight: 700;
+    background: none;
+    border: none;
+
+}
+ .main-menu-item{
+    
+    padding-left: 5%;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    background-color:#f1f1ef;
+    
+    border-bottom: 1px solid #d6d6d6;
+    
+ }
+ 
+ .main-menu .main-menu-item:nth-child(2){
+    
+    
+    padding-bottom: 0px;
+   
+    border-top: 1px solid #d6d6d6;
+    
+    
+ }
+
+ 
+
+ 
+.sidebar__submenu{
+    background-color: #f1f1ef;
+    width:100%;
+    overflow:hidden;
+    transition: 0.5s;
+    z-index:1;
+    display: inline-block;
+    height: auto;
+    max-height: 0;
+    transition: max-height 1s;
+    
+}
+.sidebar__submenu li{
+    margin: 20px 0px;
+    
+   
+}
+.sidebar__submenu li a{
+    color: #57544c;
+   
+   
+}
+
+
+/* .main-menu li:hover .sidebar__submenu{
+    height: auto;
+    max-height:500px;
+} */
+
+.opened{
+    height: auto;
+    max-height:500px;
+}
+
