@@ -1,0 +1,67 @@
+
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+body{
+    overflow-x: hidden;
+  
+    min-width: 320px;
+    font-family: 'Inter';
+    font-weight: 400;
+    color:rgb(78, 85, 85);
+    font-size: 16px;
+    
+}
+html,body{
+    height:100%
+}
+
+ul,li{
+   margin:0 ;
+   padding: 0;
+   list-style: none;
+}
+.title{
+    color: #202020;
+    font-weight: 800;
+    font-size: 40px;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    color:#202020;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content{
+    flex:1 0 auto;
+}
+
+.footer{
+    flex:none;
+}
+
+.container{
+    max-width:1760px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
