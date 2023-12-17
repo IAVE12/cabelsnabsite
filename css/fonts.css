@@ -42,3 +42,10 @@
     content:"\ea0f"
 
 }
+.icon-leftarrow:before{
+    content:"\ea3c"
+
+}.icon-rightarrow:before{
+    content:"\ea40"
+
+}
